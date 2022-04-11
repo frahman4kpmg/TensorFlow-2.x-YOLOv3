@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "yolov3"
+version = "0.1.0"
+description = "YOLOv3"
+authors = ["Farhan Rahman <frahman4@kpmg.com.au>"]
+packages = [
+    { include = "deep_sort" },
+    { include = "mnist" },
+    { include = "tools" },
+    { include = "yolov3" }
+]
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = " %(message)s"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.10"
+tensorflow = "^2.8.0"
+scipy = "^1.8.0"
+seaborn = "^0.11.2"
+tensorflow-gpu = "^2.8.0"
+opencv-python = "^4.5.5"
+tqdm = "^4.64.0"
+
+[tool.poetry.dev-dependencies]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
