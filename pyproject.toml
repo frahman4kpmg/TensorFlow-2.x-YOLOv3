@@ -17,7 +17,7 @@ log_cli_format = " %(message)s"
 log_cli_date_format = "%Y-%m-%d %H:%M:%S"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.8,<3.11"
 tensorflow = "^2.8.0"
 scipy = "^1.8.0"
 seaborn = "^0.11.2"
