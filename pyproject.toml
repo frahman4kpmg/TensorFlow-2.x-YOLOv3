@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "yolov3"
-version = "0.1.0"
+version = "0.1.1"
 description = "YOLOv3"
 authors = ["Farhan Rahman <frahman4@kpmg.com.au>"]
 packages = [
